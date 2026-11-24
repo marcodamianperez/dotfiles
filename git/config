@@ -1,0 +1,8 @@
+[user]
+	name = Marco Pérez
+	email = marcodamianperez@gmail.com
+
+[credential]
+    helper = store --file ~/.local/share/git/credentials
+[init]
+	defaultBranch = main
