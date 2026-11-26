@@ -12,7 +12,7 @@ mkdir -p "$REPO/alacritty" \
          "$REPO/git" \
          "$REPO/micro" \
          "$REPO/tmux" \
-         "$REPO/ulauncher"
+         "$REPO/rofi"
 
 # Bash
 cp ~/.bashrc "$REPO/bash/"
@@ -23,7 +23,7 @@ cp ~/.config/alacritty/alacritty.toml "$REPO/alacritty/"
 cp -r ~/.config/alacritty/themes "$REPO/alacritty/"
 
 
-# 4. Eza (ajustá el nombre si usás theme.yml)
+# Eza
 cp ~/.config/eza/theme.yml "$REPO/eza/" 2>/dev/null || true
 
 # Git
@@ -37,13 +37,8 @@ cp -r ~/.config/micro/colorschemes "$REPO/micro/"
 # Tmux
 cp ~/.config/tmux/tmux.conf "$REPO/tmux/"
 
-# Ulauncher
-mkdir -p "$REPO/ulauncher/user-themes/breeze-dark-ulauncher"
-
-cp ~/.config/ulauncher/*.json "$REPO/ulauncher/" 2>/dev/null || true
-cp ~/.config/ulauncher/user-themes/breeze-dark-ulauncher/manifest.json \
-   ~/.config/ulauncher/user-themes/breeze-dark-ulauncher/theme.css \
-   ~/.config/ulauncher/user-themes/breeze-dark-ulauncher/theme-gtk-3.20.css \
-   "$REPO/ulauncher/user-themes/breeze-dark-ulauncher/" 2>/dev/null || true
+# Rofi
+cp ~/.config/rofi/config.rasi "$REPO/rofi/"
+cp ~/.config/rofi/tokyonight.rasi "$REPO/rofi/"
 
 echo "Sincronización completada"

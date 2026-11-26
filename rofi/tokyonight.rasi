@@ -1,0 +1,149 @@
+/* Tokyo Night elegante para Rofi */
+
+* {
+    bg-main:      #1a1b26;
+    bg-elevated:  #24283b;
+    bg-selected:  #292e42;
+    fg-main:      #c0caf5;
+    fg-muted:     #565f89;
+    accent-blue:  #7aa2f7;
+    accent-cyan:  #7dcfff;
+    accent-purple:#bb9af7;
+    urgent-red:   #f7768e;
+    border-subtle:#3b4261;
+
+    font: "JetBrainsMono Nerd Font 11";
+    background-color: transparent;
+    text-color: @fg-main;
+}
+
+window {
+    width: 640px;
+    location: center;
+    anchor: center;
+    background-color: @bg-main;
+    border: 1px;
+    border-color: @border-subtle;
+    border-radius: 5px;
+    padding: 12px;
+}
+
+mainbox {
+    spacing: 10px;
+    children: [ inputbar, message, listview ];
+}
+
+inputbar {
+    background-color: @bg-elevated;
+    text-color: @fg-main;
+    border: 1px;
+    border-color: @border-subtle;
+    border-radius: 4px;
+    padding: 10px 14px;
+    spacing: 8px;
+    children: [ prompt, entry, case-indicator ];
+}
+
+prompt {
+    text-color: @accent-blue;
+    font: "JetBrainsMono Nerd Font Bold 11";
+}
+
+entry {
+    placeholder: "Buscar...";
+    placeholder-color: @fg-muted;
+    cursor: text;
+}
+
+case-indicator {
+    text-color: @accent-purple;
+}
+
+message {
+    background-color: @bg-elevated;
+    border: 1px;
+    border-color: @border-subtle;
+    border-radius: 4px;
+    padding: 8px 12px;
+}
+
+textbox {
+    text-color: @accent-cyan;
+}
+
+listview {
+    lines: 8;
+    columns: 1;
+    fixed-height: false;
+    dynamic: true;
+    require-input: false;
+    spacing: 4px;
+    padding: 4px 0px;
+    scrollbar: false;
+}
+
+element {
+    padding: 8px 12px;
+    border-radius: 4px;
+    spacing: 10px;
+    background-color: transparent;
+    text-color: @fg-main;
+}
+
+element normal.normal {
+    background-color: transparent;
+    text-color: @fg-main;
+}
+
+element normal.urgent {
+    background-color: @bg-elevated;
+    text-color: @urgent-red;
+}
+
+element normal.active {
+    background-color: @bg-elevated;
+    text-color: @accent-cyan;
+}
+
+element selected.normal {
+    background-color: @bg-selected;
+    text-color: @accent-blue;
+    border: 1px;
+    border-color: @accent-blue;
+}
+
+element selected.urgent {
+    background-color: @bg-selected;
+    text-color: @urgent-red;
+    border: 1px;
+    border-color: @urgent-red;
+}
+
+element selected.active {
+    background-color: @bg-selected;
+    text-color: @accent-purple;
+    border: 1px;
+    border-color: @accent-purple;
+}
+
+element-icon {
+    size: 20px;
+    vertical-align: 0.5;
+}
+
+element-text {
+    vertical-align: 0.5;
+    highlight: bold underline;
+}
+
+button {
+    padding: 6px 12px;
+    border-radius: 3px;
+    background-color: @bg-elevated;
+    text-color: @fg-muted;
+}
+
+button selected {
+    background-color: @bg-selected;
+    text-color: @accent-blue;
+}

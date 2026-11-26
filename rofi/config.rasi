@@ -1,0 +1,15 @@
+configuration {
+    modes: [ "drun", "window", "filebrowser", "run" ];
+    drun-display-format: "{name}";
+    window-format: "{w} · {c} · {t}";
+    icon-theme: "Papirus-Dark";
+    show-icons: true;
+    terminal: "alacritty";
+    matching: "fuzzy";
+    sort: true;
+    sorting-method: "fzf";
+    disable-history: false;
+    steal-focus: false;
+}
+
+@theme "~/.config/rofi/tokyonight.rasi"
