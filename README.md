@@ -10,7 +10,7 @@ Este repositorio contiene las configuraciones de las herramientas que más utili
 - **`git/`**: Configuración global de Git (`config`).
 - **`micro/`**: Preferencias y atajos del editor de texto de terminal.
 - **`tmux/`**: Configuración de atajos y tema para `tmux`.
-- **`ulauncher/`**: Preferencias del lanzador de aplicaciones.
+- **`rofi/`**: Preferencias y tema del lanzador de aplicaciones.
 - **`sync.sh`**: Script para copiar los archivos actualizados desde `~/.config` y `~/` hacia este repositorio y mantenerlos sincronizados.
 
 ## Sincronización
@@ -23,4 +23,4 @@ Para actualizar el repositorio con los últimos cambios locales:
 
 ## Notas
 - Para terminar de configurar `tmux` se necesita instalar Tmux Plugin Manager (TPM) y luego instalar los respectivos plugins.
-- Asegurarse de tener instalada la fente JetBrainsMono Nerd Font para visualizar correctamente los íconos en la terminal.
+- Asegurarse de tener instalada la fuente JetBrainsMono Nerd Font para visualizar correctamente los íconos en la terminal.
