@@ -1,7 +1,6 @@
 configuration {
-    modes: [ "drun", "window", "filebrowser", "run" ];
+    modes: [ "drun" ];
     drun-display-format: "{name}";
-    window-format: "{w} · {c} · {t}";
     icon-theme: "Papirus-Dark";
     show-icons: true;
     terminal: "alacritty";

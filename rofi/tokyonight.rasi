@@ -39,7 +39,7 @@ inputbar {
     border: 1px;
     border-color: @border-subtle;
     border-radius: 4px;
-    padding: 10px 14px;
+    padding: 14px 14px;
     spacing: 8px;
     children: [ prompt, entry, case-indicator ];
 }
@@ -50,6 +50,7 @@ prompt {
 }
 
 entry {
+    font: "JetBrainsMono Nerd Font 11";
     placeholder: "Buscar...";
     placeholder-color: @fg-muted;
     cursor: text;
@@ -76,7 +77,7 @@ listview {
     columns: 1;
     fixed-height: false;
     dynamic: true;
-    require-input: false;
+    require-input: true;
     spacing: 4px;
     padding: 4px 0px;
     scrollbar: false;
