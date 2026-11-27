@@ -22,9 +22,7 @@ window {
     location: center;
     anchor: center;
     background-color: @bg-main;
-    border: 1px;
-    border-color: @border-subtle;
-    border-radius: 5px;
+    border-radius: 3px;
     padding: 12px;
 }
 
@@ -36,9 +34,7 @@ mainbox {
 inputbar {
     background-color: @bg-elevated;
     text-color: @fg-main;
-    border: 1px;
-    border-color: @border-subtle;
-    border-radius: 4px;
+    border-radius: 2px;
     padding: 14px 14px;
     spacing: 8px;
     children: [ prompt, entry, case-indicator ];
@@ -62,9 +58,7 @@ case-indicator {
 
 message {
     background-color: @bg-elevated;
-    border: 1px;
-    border-color: @border-subtle;
-    border-radius: 4px;
+    border-radius: 2px;
     padding: 8px 12px;
 }
 
@@ -85,7 +79,7 @@ listview {
 
 element {
     padding: 8px 12px;
-    border-radius: 4px;
+    border-radius: 2px;
     spacing: 10px;
     background-color: transparent;
     text-color: @fg-main;
@@ -109,22 +103,16 @@ element normal.active {
 element selected.normal {
     background-color: @bg-selected;
     text-color: @accent-blue;
-    border: 1px;
-    border-color: @accent-blue;
 }
 
 element selected.urgent {
     background-color: @bg-selected;
     text-color: @urgent-red;
-    border: 1px;
-    border-color: @urgent-red;
 }
 
 element selected.active {
     background-color: @bg-selected;
     text-color: @accent-purple;
-    border: 1px;
-    border-color: @accent-purple;
 }
 
 element-icon {
@@ -139,7 +127,7 @@ element-text {
 
 button {
     padding: 6px 12px;
-    border-radius: 3px;
+    border-radius: 1px;
     background-color: @bg-elevated;
     text-color: @fg-muted;
 }
