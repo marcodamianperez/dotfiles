@@ -9,6 +9,7 @@ configuration {
     sorting-method: "fzf";
     disable-history: false;
     steal-focus: false;
+    monitor: 1;
 }
 
 @theme "~/.config/rofi/tokyonight.rasi"
